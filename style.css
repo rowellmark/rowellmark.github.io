@@ -120,6 +120,7 @@ body{
 	box-shadow: 1px 2px 10px rgba(0,0,0,.3);
 
 }
+
 	.fixed-header .logo{
 		width: 65px;
 		padding: 5px 0;
@@ -129,6 +130,19 @@ body{
 			width: 100%;
 			height: auto;
 		}
+
+	.fixed-header .navigation{
+		text-align: center;
+	}
+		.fixed-header .navigation li {
+		    padding: 34px 10px;
+		    display: inline-block;
+		}
+			.fixed-header .navigation a{
+				color: #000;
+				text-transform: uppercase;
+				font-weight: 700;
+			}
 
 #hero{
 	width: 100%;
@@ -293,6 +307,13 @@ body{
 				text-transform: uppercase;
 			}
 
+			#hero .social{
+			    font-size: 26px;
+			}
+				#hero .social a{
+					color: #fff;
+				}
+
 			/* Cursor */
 .typed-cursor{
 	opacity: 1;
@@ -433,6 +454,7 @@ width:110px;
 
 	#my-works .project_list{
 		margin-bottom: 30px;
+		overflow: hidden;
 	}
 		#my-works .project_list .proj-wrap {
 			position: relative;
@@ -443,7 +465,10 @@ width:110px;
 				display: block;
 				width: 100%;
 				height: auto;
-				background-color:  #fda607;
+				background-color: #fda607;
+				background-size: contain;
+				background-position: top;
+				background-repeat: no-repeat;
 			}
 
 			#my-works .project_list .proj-wrap .content-wrap{
@@ -452,7 +477,41 @@ width:110px;
 				left: 0;
 				width: 100%;
 				height: auto;
+				transition: all .5s ease-out;
 			}
+					
+
+			#my-works .project_list .proj-wrap .content-wrap h3 {
+			    padding: 10px;
+			    text-align: center;
+			    font-weight: bold;
+			}
+
+			#my-works .project_list .proj-wrap .content-wrap h4 {
+			    text-align: center;
+			}
+
+			#my-works .project_list .proj-wrap .content-wrap .bttncta{
+				display: block;
+				padding: 20px 0;
+				text-align: center;
+			}
+				#my-works .project_list .proj-wrap .content-wrap .bttncta a{
+					display: inline-block;
+					vertical-align: top;
+					background: #b77a0c;
+					color: #fff;
+					border-radius: 20px;
+					padding: 13px;
+					text-decoration: none;
+					transition: all .5s ease-out;
+
+				}
+					#my-works .project_list .proj-wrap .content-wrap .bttncta a:hover{
+						background: #96640a;
+					}
+
+
 
 #sub-footer {
     background: #fda607;
@@ -465,6 +524,34 @@ width:110px;
 	    text-align: center;
 	    padding: 10px 0;
 	}
+
+	#sub-footer .statement {
+	    text-align: center;
+	    padding: 10px;
+	    font-size: 19px;
+	}
+
+	#sub-footer ul {
+	    padding-top: 20px;
+	    text-align: center;
+	}
+		#sub-footer li {
+			padding: 3px 0;
+		}
+
+			#sub-footer a {
+			    color: #292929;
+			    font-size: 33px;
+			}
+
+
+
+			#sub-footer li svg {
+			    width: 29px;
+			    margin-right: 7px;
+			}
+
+
 
 footer.footer {
 	background: #3e3e3e;
@@ -520,3 +607,17 @@ footer.footer {
 			margin: 0 5px;
 		}
 /** THEME **/
+@media (max-width: 992px) { 
+	.fixed-header .navigation{
+		display: none;
+	}
+}
+@media (max-width: 768px) { 
+	#sub-footer a{
+		font-size: 22px;
+	}
+
+
+}
+
+

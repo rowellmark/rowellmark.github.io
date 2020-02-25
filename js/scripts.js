@@ -114,7 +114,7 @@
 			    "line_linked": {
 			      "enable": true,
 			      "distance": 150,
-			      "color": "#ff0000",
+			      "color": "#fda607",
 			      "opacity": 0.7 ,
 			      "width": 1
 			    },
