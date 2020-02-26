@@ -150,6 +150,18 @@ body{
 					color: #fda607;
 				}
 
+			.fixed-header .navigation a.print-resume {
+			    background: #fda607;
+			    display: block;
+			    padding: 10px;
+			    border-radius: 10px;
+			    margin-top: -16px;
+			    color: #fff;
+			    text-decoration: none;
+			}
+				.fixed-header .navigation a.print-resume:hover{
+					background: #d35400;
+				}
 #hero{
 	width: 100%;
 	height: 800px;
@@ -510,7 +522,7 @@ width:110px;
 				#my-works .project_list .proj-wrap .content-wrap .bttncta a{
 					display: inline-block;
 					vertical-align: top;
-					background: #b77a0c;
+					background: #d35400;
 					color: #fff;
 					border-radius: 20px;
 					padding: 13px;
@@ -634,7 +646,22 @@ width:110px;
 			    margin-right: 7px;
 			}
 
-
+			#sub-footer  a.resume-bttn {
+				background: #d35400;
+				display: block;
+				padding: 10px;
+				border-radius: 10px;
+				margin-top: 0;
+				color: #fff;
+				text-decoration: none;
+				font-size: 20px;
+				width: 191px;
+				text-align: center;
+				margin: 40px auto 0;
+			}
+				#sub-footer  a.resume-bttn:hover{
+					opacity: 0.8;
+				}
 
 #achivements{
 	padding-bottom: 100px;
