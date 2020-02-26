@@ -4,18 +4,39 @@
 
 		init: function(){
 
+			this.luxy();
+			this.go_to();
 			this.particle();
 			this.skill_bar();
 			this.banner_adjust();
 			this.banner_typer();
 			this.fixed_header();
 
+		
+
+		},
+		luxy : function(){
 			luxy.init({
 				wrapper: '#mainwrapper',
 				targets : '.luxy-el',
 				wrapperSpeed:  0.08
 			});
 
+		},
+		go_to : function(){
+
+			 $("a[href*='#']:not([href='#'])").click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			    var target = $(this.hash);
+			    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			    if (target.length) {
+			      $('html,body').animate({
+			        scrollTop: target.offset().top - 75
+			      }, 1000);
+			      return false;
+			    }
+			  }
+			 });
 
 		},
 		fixed_header: function(){
