@@ -349,7 +349,9 @@ body{
 
 /** SKILLS **/
 .skills-sections{
-
+    background: url(images/man2.png) no-repeat;
+    background-size: 16%;
+    background-position: 17px bottom;
 }
 	.skills-sections h2{
 		font-size: 50px;
@@ -431,12 +433,14 @@ width:110px;
 }
 
 #my-works{
-	width: 100%;
-	height: auto;
-	background: #eee;
-	color: #524e4d;
-	margin-top: 50px;
-	padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    background: url(images/man1.png) no-repeat #eee;
+    color: #524e4d;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    background-size: 20%;
+    background-position: right bottom;
 }
 	#my-works h2{
 		font-size: 50px;
