@@ -10,6 +10,13 @@
 			this.banner_typer();
 			this.fixed_header();
 
+			luxy.init({
+				wrapper: '#mainwrapper',
+				targets : '.luxy-el',
+				wrapperSpeed:  0.08
+			});
+
+
 		},
 		fixed_header: function(){
 

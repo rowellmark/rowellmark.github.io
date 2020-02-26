@@ -21,29 +21,32 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
 
 
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.animate.min">
+	<link rel="stylesheet" href="css/style.animate.min.css">
 	<link rel="stylesheet" href="style.css">
 
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+
 	<script src="js/bootstrap.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
 	<script src="js/typed.min.js"></script>
-	<script src="js/jquery.elementpeek.js"></script>
+	<script src="js/luxy.min.js"></script>
+
+	<script src="js/jquery.elementpeek.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="js/jquery.elementpeek.js"></script>
 
 
 	<script src="js/scripts.js"></script>
 
 </head>
 <body>
-<div id="mainwrapper">
-
 	<header class="fixed-header">
 			<div class="container">
 				<div class="row">
@@ -68,6 +71,10 @@
 
 			</div>
 	</header>	
+
+<div id="mainwrapper">
+
+	
 	<div id="hero">	
 		<div id="particles-js"></div>
 		<div class="hero-content">
@@ -98,7 +105,7 @@
 	</div>
 
 	<section class="skills-sections">
-		<div class="container">
+		<div class="container" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.1">
 			<h2>My Expertise</h2>
 			<div class="row">
 				<div class="col-md-6">
@@ -110,7 +117,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="skillbar" data-percent="85%">
+					<div class="skillbar" data-percent="90%">
 						<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
 						<div class="skillbar-bar" style="background: #3498db;"></div>
 						<div class="skill-bar-percent">90%</div>
@@ -118,7 +125,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="skillbar" data-percent="85%">
+					<div class="skillbar" data-percent="90%">
 						<div class="skillbar-title" style="background: #2980b9;"><span>SASS</span></div>
 						<div class="skillbar-bar" style="background: #3498db;"></div>
 						<div class="skill-bar-percent">90%</div>
@@ -126,7 +133,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="skillbar" data-percent="65%">
+					<div class="skillbar" data-percent="90%">
 					   <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
 					   <div class="skillbar-bar" style="background: #2c3e50;"></div>
 					   <div class="skill-bar-percent">90%</div>
@@ -134,7 +141,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="skillbar" data-percent="60%">
+					<div class="skillbar" data-percent="90%">
 					   <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
 					   <div class="skillbar-bar" style="background: #5a68a5;"></div>
 					   <div class="skill-bar-percent">90%</div>
@@ -142,7 +149,7 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="skillbar" data-percent="75%">
+					<div class="skillbar" data-percent="90%">
 					   <div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
 					   <div class="skillbar-bar" style="background: #525252;"></div>
 					   <div class="skill-bar-percent">90%</div>
@@ -166,20 +173,26 @@
 				</div>
 				<div class="col-md-6">
 					<div class="skillbar" data-percent="90%">
-					   <div class="skillbar-title" style="background: #d35400;"><span>VueJS</span></div>
-					   <div class="skillbar-bar" style="background: #e67e22;"></div>
+					   <div class="skillbar-title" style="background: #41b883;"><span>VueJS</span></div>
+					   <div class="skillbar-bar" style="background: #217952;"></div>
 					   <div class="skill-bar-percent">70%</div>
 					</div>					
 				</div>
 
 				<div class="col-md-6">
 					<div class="skillbar" data-percent="90%">
-					   <div class="skillbar-title" style="background: #d35400;"><span>TypeScript</span></div>
-					   <div class="skillbar-bar" style="background: #e67e22;"></div>
+					   <div class="skillbar-title" style="background: #294E80;"><span>TypeScript</span></div>
+					   <div class="skillbar-bar" style="background: #59a3d8;"></div>
 					   <div class="skill-bar-percent">60%</div>
 					</div>					
 				</div>
-
+				<div class="col-md-6">
+					<div class="skillbar" data-percent="70%">
+					   <div class="skillbar-title" style="background: #43853d;"><span>Nodejs</span></div>
+					   <div class="skillbar-bar" style="background: #43853d;"></div>
+					   <div class="skill-bar-percent">70%</div>
+					</div>					
+				</div>
 
 			</div>
 		</div>
@@ -188,11 +201,24 @@
 
 	<section id="my-works">
 		<div class="container">	
-			<h2>My Work</h2>
-			<p>Want to work together? <a href="#">Email me.</a></p>
+			<h2 data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">My Work</h2>
+			<p data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">Want to work together? <a href="mailto:teksnip101@gmail.com">Email me.</a></p>
 
 			<div class="row">
-				<div class="col-sm-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">
+					<div class="proj-wrap">
+						<canvas style="background-image: url(images/prototype.png);" width="350" height="350"></canvas>
+						<div class="content-wrap">
+							<h3>Website Prestation Web App</h3>
+							<h4>PHP + WP Rest API</h4>
+							<div class="bttncta">
+								<a href="#" target="_blank">Visit Website</a>
+								<a href="mailto:teksnip101@gmail.com">Inquire</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.3">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/jenadamico.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -205,7 +231,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.4">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/lanerealty.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -218,7 +244,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/dandodd.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -231,7 +257,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.3">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/havana.png);" width="400" height="400"></canvas>
 						<div class="content-wrap">
@@ -244,7 +270,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.4">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/UX.png);" width="400" height="400"></canvas>
 						<div class="content-wrap">
@@ -257,7 +283,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/landingpage.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -270,7 +296,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.3">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/moderngroup.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -283,7 +309,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
+				<div class="col-md-4 project_list" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.4">
 					<div class="proj-wrap">
 						<canvas style="background-image: url(images/egypt.png);" width="350" height="350"></canvas>
 						<div class="content-wrap">
@@ -296,33 +322,33 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 project_list">
-					<div class="proj-wrap">
-						<canvas style="background-image: url();" width="350" height="350"></canvas>
-						<div class="content-wrap">
-							<h3>DEMO WORK</h3>
-							<h4> UX/UI DESIGN WORDPRESS THEME CUSTOMIZATION</h4>
-							<div class="bttncta">
-								<a href="#" target="_blank">Visit Website</a>
-								<a href="mailto:teksnip101@gmail.com">Inquire</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+		
 			</div>
 		</div>
 	</section>
 
 	<section id="sub-footer" class="cd-section">
 		<div class="container">
-			<p class="intro slate">Want to work together?</p>
-			<p class="statement slate">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
+			<p class="intro slate" data-aios-reveal="true" data-aios-animation="fadeInUpLeft" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">Want to work together?</p>
+			<p class="statement slate" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
 
-			<ul>
+			<ul data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.1">
 				<li><a href=""><i class="fas fa-mobile"></i>+639959555947</a></li>
 				<li><a href="mailto:teksnip101@gmail.com"><i class="fas fa-envelope-open"></i> teksnip101@gmail.com</a></li>
 			</ul>
+		</div>
+	</section>
+
+	<section id="achivements">
+		<div class="container">	
+			<h2>Achivements and Certification</h2 data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">
+			<div class="row">
+				<div class="col-md-6 achivements" data-aios-reveal="true" data-aios-animation="fadeInUp" data-aios-animation-delay="0s" data-aios-animation-reset="false" data-aios-animation-offset="0.2">
+					<div class="ac-cont">
+						<img src="images/certification.png">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
