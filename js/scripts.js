@@ -230,6 +230,11 @@
 	jQuery(document).ready( function() {
 		
 		 app.init();
+
+		 jQuery('.hero-content .logo').addClass('active'); 
+		 jQuery('#hero .hero-content h1').addClass('active');
+		 jQuery('#hero .hero-content a.hire-bttn').addClass('active');
+		 jQuery('#hero .hero-content .learn-more').addClass('active')
 	});
 
 	jQuery(window).on('resize', function(){
@@ -238,10 +243,7 @@
 
 
 	jQuery(window).on('load', function(){
-		jQuery('.hero-content .logo').addClass('active');
-		jQuery('#hero .hero-content h1').addClass('active');
-		jQuery('#hero .hero-content a.hire-bttn').addClass('active');
-		jQuery('#hero .hero-content .learn-more').addClass('active')
+	
 	})
 
 })(jQuery);
