@@ -83,7 +83,7 @@
 		banner_typer : function (){
 
 			var typed = new Typed("#hero p", {
-			  strings: ["I'm a Philippines based Full-Stack Developer with over 6 years of experience focusing on crafting clean & user‑friendly experiences."],
+			  strings: ["I'm a Philippine based Full-Stack Developer with over 6 years of experience focusing on crafting clean & user‑friendly experiences."],
 			  typeSpeed: 20,
 
 			});
