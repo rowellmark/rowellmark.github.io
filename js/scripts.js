@@ -235,6 +235,8 @@
 		 jQuery('#hero .hero-content h1').addClass('active');
 		 jQuery('#hero .hero-content a.hire-bttn').addClass('active');
 		 jQuery('#hero .hero-content .learn-more').addClass('active')
+
+		 AOS.init();
 	});
 
 	jQuery(window).on('resize', function(){
