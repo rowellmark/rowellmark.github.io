@@ -106,6 +106,136 @@ body{
 	font-family: 'Open Sans';
 
 }
+
+/* Header Banner */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--bg: rgb(9, 14, 23);
+	--gradientBg: linear-gradient(45deg, #40e0d0, #9932cc, #ff1493, orange);
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg);
+	color: #ffffff;
+}
+
+/* Reset */
+a {
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	border-radius: 0.4em;
+	background: var(--bg);
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+.wrapper {
+	position: relative;
+}
+
+/* Text */
+.hero__heading {
+	font-size: clamp(2rem, 5vw, 8rem);
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* Menu */
+.menu {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	background: var(--gradientBg);
+	clip-path: circle(0 at calc(100% - 2rem) 2rem);
+	transition: clip-path 500ms;
+	z-index: 1;
+	font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.menu.is-open {
+	clip-path: circle(200% at calc(100% - 2rem) 2rem);
+	pointer-events: all;
+}
+
+.menu a {
+	display: block;
+	padding: 0.5em;
+	transition: all 1s ease-in-out;
+}
+
+	.menu a:hover{
+		color:#000;
+		text-decoration: none;
+	}
+.menu-button {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 2;
+}
+
+.menu-button span:last-child,
+.menu-button.is-active span:first-child {
+	display: none;
+}
+
+.menu-button.is-active span:last-child {
+	display: inline;
+}
+
+/* Hero */
+.hero {
+	min-height: 100vh;
+	padding: clamp(1rem, 2vw, 5rem);
+	display: flex;
+	align-items: center;
+}
+
+.hero--secondary {
+	--mask: radial-gradient(
+		circle at var(--x, 50%) var(--y, 50%),
+    black var(--maskSize1, 0), 
+		transparent 0, 
+		transparent var(--maskSize2, 0),
+    black var(--maskSize2, 0), 
+		black var(--maskSize3, 0), 
+		transparent 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--gradientBg);
+	color: rgb(9, 14, 23);
+	-webkit-mask-image: var(--mask);
+	mask-image: var(--mask);
+}
+/* Header Banner */
 /** THEME **/
 .fixed-header{
 	position: fixed;
@@ -171,6 +301,8 @@ body{
 	background-size: cover;
 	position: relative;
 }
+
+
 	#hero:after{
 		display: block;
 		width: 100%;
@@ -262,6 +394,12 @@ body{
 			#hero .hero-content h1.active{
 				left: 0;
 				opacity: 1;
+			}
+
+			#hero .hero-content h1 span {
+				font-size: 27px;
+				display: block;
+				margin-block: 15px;
 			}
 		#hero .hero-content p{
 			text-align: center;

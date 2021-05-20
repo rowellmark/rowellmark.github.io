@@ -44,6 +44,7 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+	<script src="	https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 
 	<script src="js/typed.min.js"></script>
 	<script src="js/luxy.min.js"></script>
@@ -58,34 +59,71 @@
 	
 </head>
 <body>
-	<header class="fixed-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-2">
-						<div class="logo">
-							<a href="#">
-								<img src="images/logo.png" alt="">
-							</a>
-						</div>
+
+	<header>
+		<button class="menu-button" data-btn="menu">
+			<span>Menu</span>
+			<span>Close</span>
+		</button>
+		<nav class="menu" data-menu>
+			<ul>
+				<li>
+					<a href="#hero">About me</a>
+				</li>
+				<li><a href="#skills">My Expertise</a></li>
+				<li><a href="#my-works">My Work</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#sub-footer">Contact Me</a></li>
+				<li><a href="#achivements">Achivements</a></li>
+				<li><a href="cv/index.html" class="print-resume">Print My Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="wrapper">
+		<div class="hero">
+			<h1 class="hero__heading">
+				<img src="images/logo-white.png" alt=""><br>
+				Welcome to my website</h1>
+		</div>
+	
+		<div class="hero hero--secondary" aria-hidden="true" data-hero>
+			<p class="hero__heading">
+				<img src="images/logo.png" alt=""><br>
+				Welcome to my website</p>
+		</div>
+	</div>
+
+	
+
+<header class="fixed-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="">
+						</a>
 					</div>
-
-					<div class="col-10">
-						<nav class="navigation">
-							<ul>
-								<li><a href="#skills">My Expertise</a></li>
-								<li><a href="#my-works">My Work</a></li>
-								<li><a href="#services">Services</a></li>
-								<li><a href="#sub-footer">Contact Me</a></li>
-								<li><a href="#achivements">Achivements</a></li>
-								<li><a href="cv/index.html" class="print-resume">Print My Resume</a></li>
-
-							</ul>
-						</nav>
-					</div>					
 				</div>
 
+				<div class="col-10">
+					<nav class="navigation">
+						<ul>
+							<li><a href="#skills">My Expertise</a></li>
+							<li><a href="#my-works">My Work</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#sub-footer">Contact Me</a></li>
+							<li><a href="#achivements">Achivements</a></li>
+							<li><a href="cv/index.html" class="print-resume">Print My Resume</a></li>
+
+						</ul>
+					</nav>
+				</div>					
 			</div>
-	</header>	
+
+		</div>
+</header>	
 
 <div id="mainwrapper">
 
@@ -95,12 +133,8 @@
 		<div class="hero-content">
 			<div class="container">
 				<div class="herowrap">
-					<div class="logo">
-						<a href="#">
-							<img src="images/logo.png" alt="">
-						</a>
-					</div>
-					<h1>Full-Stack Developer</h1>
+			
+					<h1>Hi, I'm Rowell Blanca <br> <span>Full-Stack Developer</span></h1>
 					<p></p>
 
 					<a href="#my-works" class="hire-bttn">Check my work</a>
