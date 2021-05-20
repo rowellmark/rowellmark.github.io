@@ -175,6 +175,7 @@ button {
 	transition: clip-path 500ms;
 	z-index: 1;
 	font-size: clamp(1rem, 2vw, 4rem);
+	z-index: 99;
 }
 
 .menu.is-open {
@@ -196,7 +197,7 @@ button {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
-	z-index: 2;
+	z-index: 999;
 }
 
 .menu-button span:last-child,
