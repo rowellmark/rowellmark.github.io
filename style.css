@@ -652,6 +652,7 @@ width:110px;
 			#my-works .project_list .proj-wrap .content-wrap h4 {
 			    text-align: center;
 				padding: 0 10px;
+				line-height: 1.4;
 			}
 
 			#my-works .project_list .proj-wrap .content-wrap .bttncta{
