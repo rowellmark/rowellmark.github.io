@@ -1,0 +1,55 @@
+/* Default Title */
+.default-title{
+	h2{
+		font-size: calc(max(2.5vw, 30px));
+		font-weight: 700;
+		color: #181818;
+		line-height: 1.4;
+	}
+
+	&.default-title-color-secondary{
+		h2 {
+			color: $secondary-color;
+		}
+	}
+}
+/* Default Title */
+/* Default Button */
+.default-button{
+	display: inline-block;
+	a{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-width: 157px;
+		background: $primary-color;
+		border-radius: calc(max(0.833vw, 12px));
+		height: calc(max(2.917vw, 42px));
+		color: #fff;
+		line-height: 1.6;
+		font-weight: 700;
+		transition: $transition;
+		font-size: calc(max(0.875vw, 14px));
+		padding: 0 calc(max(2.431vw, 35px));
+		border: 2px solid $primary-color;
+
+		&:hover {
+			background: $hover-color;
+			border-color: $hover-color;
+		}
+	}
+	&.default-button-outline{
+		a{
+			background: transparent;
+			border-color: $primary-color;
+
+			&:hover {
+				background: $hover-color;
+				border-color: $hover-color;
+			}
+		}
+	}
+
+}
+/* Default Button */
