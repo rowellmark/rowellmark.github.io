@@ -128,7 +128,7 @@
 		banner_typer : function (){
 
 			var typed = new Typed("#hero p", {
-			  strings: ["I'm a Philippine based Full-Stack Developer with over 6 years of experience focusing on crafting clean & user‑friendly experiences."],
+				strings: ["I have extensive experience in leveraging JavaScript for WordPress theme and plugin development, as well as building responsive websites and creating interactive features. This combination of skills allows me to drive business growth and improve user experience (UX) by creating custom WordPress solutions that are tailored to meet specific needs."],
 			  typeSpeed: 20,
 
 			});

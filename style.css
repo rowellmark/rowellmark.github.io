@@ -403,11 +403,11 @@ button {
 				margin-block: 15px;
 			}
 		#hero .hero-content p{
-			text-align: center;
 			font-size: 24px;
 			padding-top: 10px;
 			display: inline-block;
 			vertical-align: top;
+			line-height: 1.4;
 		}
 		#hero .hero-content a.hire-bttn{
 			height: auto;
